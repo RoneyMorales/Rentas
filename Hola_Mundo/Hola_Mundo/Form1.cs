@@ -24,7 +24,7 @@ namespace Hola_Mundo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show (Convert.ToString("Hola Mundo, yo soy RONEY"));
+            MessageBox.Show("Hola Mundo, soy RONEY");
         }
     }
 }
