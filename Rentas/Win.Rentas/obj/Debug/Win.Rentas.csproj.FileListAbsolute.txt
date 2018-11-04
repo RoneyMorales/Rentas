@@ -1,0 +1,9 @@
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\bin\Debug\Win.Rentas.exe.config
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.csprojResolveAssemblyReference.cache
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.FormClientes.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.FormLogin.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.FormMenu.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.FormProductos.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.FormRentas.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.Properties.Resources.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Rentas\Win.Rentas\obj\Debug\Win.Rentas.csproj.GenerateResource.Cache
