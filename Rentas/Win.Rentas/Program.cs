@@ -23,9 +23,9 @@ namespace Win.Rentas
 
         public static byte[] imageToByteArray(Image imageIn)
         {
-
-            var ms = new MemoryStream();
+            MemoryStream ms = new MemoryStream();
             imageIn.Save(ms, imageIn.RawFormat);
+
             return ms.ToArray();
         }
     }
