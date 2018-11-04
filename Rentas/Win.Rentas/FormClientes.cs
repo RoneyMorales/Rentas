@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,14 @@ namespace Win.Rentas
         {
             listaClientesBindingSource.EndEdit();
             var cliente = (Cliente)listaClientesBindingSource.Current;
+            if (fotoPictureBox.Image != null)
+            {
+                cliente.Foto = Program.imageToByteArray(fotoPictureBox.Image);
+            }
+            else
+            {
+                cliente.Foto = null;
+            }
             var resultado = _clientes.GuardarCliente(cliente);
 
             if(resultado.Exitoso == true)
@@ -95,6 +104,35 @@ namespace Win.Rentas
         {
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cliente = (Cliente)listaClientesBindingSource.Current;
+            if (cliente != null)
+            {
+
+
+                openFileDialog1.ShowDialog();
+                var archivo = openFileDialog1.FileName;
+                if (archivo != "")
+                {
+
+                    var fileInfo = new FileInfo(archivo);
+                    var fileStream = fileInfo.OpenRead();
+                    fotoPictureBox.Image = Image.FromStream(fileStream);
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cree un cliente antes de asignarle una imagen");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fotoPictureBox.Image = null;
         }
     }
 }
