@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="ClientesBL.cs" />
     <Compile Include="contexto.cs" />
+    <Compile Include="CuidadBL.cs" />
+    <Compile Include="DatosdeInicio.cs" />
     <Compile Include="PluralizingTableNameConvertion.cs" />
     <Compile Include="ProductosBL.cs" />
     <Compile Include="SeguridadBL.cs" />

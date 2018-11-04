@@ -27,6 +27,15 @@ namespace BL.Rentas
             return ListaClientes;
         }
 
+        public void CancelarCambios()
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries())
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
+        }
+
         public Resultado GuardarCliente(Cliente cliente)
         {
            var resultado = validar(cliente);
@@ -86,6 +95,12 @@ namespace BL.Rentas
                 resultado.Exitoso = false;
             }
 
+            if (cliente.CiudadId == 0)
+            {
+                resultado.Mensaje = "Seleccione una Ciudad";
+                resultado.Exitoso = false;
+            }
+
             if (string.IsNullOrEmpty(cliente.Direccion) == true)
             {
                 resultado.Mensaje = "Ingrese una direccion valida";
@@ -103,6 +118,12 @@ namespace BL.Rentas
         public string Email { get; set; }
         public string Telefono { get; set; }
         public string Direccion { get; set; }
+
+        
+        public int CiudadId { get; set; }
+        public Ciudad Ciudad { get; set; }
+
+        public Byte[] Foto { get; set; }
         public bool Activo { get; set; }
 
         public Cliente()

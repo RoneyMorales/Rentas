@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Data.Entity;
 
 namespace BL.Rentas
 {
@@ -20,6 +21,15 @@ namespace BL.Rentas
             _contexto.Productos.Load();
             ListaProductos = _contexto.Productos.Local.ToBindingList();
             return ListaProductos;
+        }
+
+        public void CancelarCambios()
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries())
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
         }
 
         public Resultado GuardarProducto(Producto producto)
@@ -90,6 +100,7 @@ namespace BL.Rentas
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
+        public byte Foto { get; set; }
         public bool Activo { get; set; }
     }
 

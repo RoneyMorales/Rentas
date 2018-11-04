@@ -113,6 +113,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.Rentas.CiudadBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Cliente.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.ClientesBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Producto.datasource" />
