@@ -27,9 +27,9 @@ namespace BL.Rentas
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Ciudad> Ciudad { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
-        internal void SaveChanges()
+        internal void _Savechanges()
         {
-         // throw new NotImplementedException();
+          throw new NotImplementedException();
         }
     }
 }

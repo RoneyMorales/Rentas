@@ -17,7 +17,7 @@ namespace BL.Rentas
 
         public bool Autorizar(string usuario, string contrasena)
         {
-            var usuarios = _contexto.Usuario.ToList();
+             var usuarios = _contexto.Usuario.ToList();
 
             foreach (var usuarioDB in usuarios)
             {
