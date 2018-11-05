@@ -29,7 +29,7 @@ namespace BL.Rentas
         public DbSet<Usuario> Usuario { get; set; }
         internal void SaveChanges()
         {
-          throw new NotImplementedException();
+         // throw new NotImplementedException();
         }
     }
 }
