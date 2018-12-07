@@ -67,6 +67,12 @@
     <Compile Include="FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactura.Designer.cs">
+      <DependentUpon>FormFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactura.resx">
+      <DependentUpon>FormFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -131,6 +140,9 @@
     <None Include="Properties\DataSources\BL.Rentas.ComprasBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.contexto.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.DatosdeInicio.datasource" />
+    <None Include="Properties\DataSources\BL.Rentas.Factura.datasource" />
+    <None Include="Properties\DataSources\BL.Rentas.FacturaBL.datasource" />
+    <None Include="Properties\DataSources\BL.Rentas.FacturaDetalle.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.ProveedoresBL.datasource" />

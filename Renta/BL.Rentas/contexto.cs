@@ -30,7 +30,7 @@ namespace BL.Rentas
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Proveedor> Proveedor { get; set; }
         public DbSet<Compra> Compra { get; set; }
-        //public DbSet<Factura> Facturas { get; set; }
+        public DbSet<Factura> Facturas { get; set; }
 
     }
 }

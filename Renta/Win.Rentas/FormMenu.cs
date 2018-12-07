@@ -94,9 +94,9 @@ namespace Win.Rentas
 
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //var FormFactura = new FormFactura();
-            //FormFactura.MdiParent = this;
-            //FormFactura.Show();
+            var FormFactura = new FormFactura();
+            FormFactura.MdiParent = this;
+            FormFactura.Show();
         }
     }
 }

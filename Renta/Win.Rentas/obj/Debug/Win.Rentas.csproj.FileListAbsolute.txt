@@ -58,3 +58,4 @@ C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Renta\Win.Rentas\bin\Debug\Ent
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Renta\Win.Rentas\bin\Debug\BL.Rentas.pdb
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Renta\Win.Rentas\bin\Debug\EntityFramework.xml
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Renta\Win.Rentas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormFactura.resources
