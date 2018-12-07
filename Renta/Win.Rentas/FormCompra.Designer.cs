@@ -70,7 +70,7 @@
             this.impuestoTextBox = new System.Windows.Forms.TextBox();
             this.totalTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Refresh = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             activoLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -453,23 +453,22 @@
             this.label1.Text = "ANULADO";
             this.label1.Visible = false;
             // 
-            // Refresh
+            // button3
             // 
-            this.Refresh.BackColor = System.Drawing.Color.Silver;
-            this.Refresh.Image = ((System.Drawing.Image)(resources.GetObject("Refresh.Image")));
-            this.Refresh.Location = new System.Drawing.Point(326, 94);
-            this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(36, 35);
-            this.Refresh.TabIndex = 24;
-            this.Refresh.UseVisualStyleBackColor = false;
-            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            this.button3.Image = global::Win.Rentas.Properties.Resources.Refresh;
+            this.button3.Location = new System.Drawing.Point(348, 46);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 23);
+            this.button3.TabIndex = 24;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 485);
-            this.Controls.Add(this.Refresh);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(totalLabel);
             this.Controls.Add(this.totalTextBox);
@@ -539,6 +538,6 @@
         private System.Windows.Forms.TextBox impuestoTextBox;
         private System.Windows.Forms.TextBox totalTextBox;
         private System.Windows.Forms.Label label1;
-        private new System.Windows.Forms.Button Refresh;
+        private System.Windows.Forms.Button button3;
     }
 }

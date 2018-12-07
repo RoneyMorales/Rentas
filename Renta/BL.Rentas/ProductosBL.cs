@@ -32,6 +32,9 @@ namespace BL.Rentas
             ListaProductos = _contexto.Productos.Local.ToBindingList();
             return ListaProductos;
         }
+       
+        //
+     
         public void CancelarCambios()
         {
             foreach (var item in _contexto.ChangeTracker.Entries())

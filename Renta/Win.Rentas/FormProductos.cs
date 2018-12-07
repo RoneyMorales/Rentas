@@ -114,20 +114,39 @@ namespace Win.Rentas
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            //_productos = new ProductosBL();
-            //  MessageBox.Show("hola");
-            //var TextoaBuscar = textBox1.Text;
-            //listaProductosBindingSource.DataSource = _productos.Obtenerproductos(TextoaBuscar);
-            //listaProductosBindingSource.ResetBindings(false);
-        }
+      
 
         private void descripcionTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-     
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (idTextBox.Text != "")
+            {
+                var productoId = Convert.ToInt32(idTextBox.Text);
+                _productos.RefrescarDatos(productoId);
+                listaProductosBindingSource.ResetBindings(false);
+            }
+        }
+
+     /*   private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            _productos = new ProductosBL();
+            MessageBox.Show("hola");
+            var TextoaBuscar = textBox1.Text;
+            listaProductosBindingSource.DataSource = _productos.Obtenerproductos(TextoaBuscar);
+            listaProductosBindingSource.ResetBindings(false);
+        }*/
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            _productos = new ProductosBL();
+           // MessageBox.Show("hola");
+            var TextoaBuscar = textBox1.Text;
+            listaProductosBindingSource.DataSource = _productos.Obtenerproductos(TextoaBuscar);
+            listaProductosBindingSource.ResetBindings(false);
+        }
     }
 }

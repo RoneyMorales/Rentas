@@ -148,17 +148,23 @@ namespace Win.Rentas
                 label1.Visible = false;
             }
         }
-// Actualizar Lista de Proveedores y lista de Productos en FORMULARIO COMPRAS
-        private void Refresh_Click(object sender, EventArgs e)
+        /* private void Refresh_Click(object sender, EventArgs e)
+         {
+
+         }*/
+
+        // Actualizar Lista de Proveedores y lista de Productos en FORMULARIO COMPRAS
+
+        private void button3_Click(object sender, EventArgs e)
         {
             if (idTextBox.Text != "")
             {
                 var CompraiD = Convert.ToInt32(idTextBox.Text);
-               _comprasBL.RefrescarDatos(CompraiD);
+                _comprasBL.RefrescarDatos(CompraiD);
 
-            
-               // _comprasBL = new ComprasBL();
-               // listaComprasBindingSource.DataSource = _comprasBL.ObtenerCompras();
+
+                // _comprasBL = new ComprasBL();
+                // listaComprasBindingSource.DataSource = _comprasBL.ObtenerCompras();
 
                 _proveedorBL = new ProveedoresBL();
                 listaProveedoresBindingSource.DataSource = _proveedorBL.ObtenerProveedor();
