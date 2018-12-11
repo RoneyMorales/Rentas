@@ -1,10 +1,12 @@
-﻿using System;
+﻿using BL.Rentas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace BL.Rentas
 {
@@ -17,6 +19,7 @@ namespace BL.Rentas
         public FacturaBL()
         {
             _contexto = new Contexto();
+
         }
 
         public BindingList<Factura> ObtenerFacturas()
@@ -27,6 +30,14 @@ namespace BL.Rentas
             return ListaFacturas;
         }
 
+        public BindingList<Factura> ObtenerFacturas(DateTime fechainicial, DateTime fechafinal)
+        {
+            _contexto.Facturas.Include("FacturaDetalle").Where(factura => factura.Fecha >= fechainicial
+            && factura.Fecha <= fechafinal && factura.Activo == true).ToList();
+
+            ListaFacturas = _contexto.Facturas.Local.ToBindingList();
+            return ListaFacturas;
+        }
         public void AgregarFactura()
         {
             var nuevaFactura = new Factura();
@@ -74,6 +85,7 @@ namespace BL.Rentas
             return resultado;
         }
 
+        //codigo calcula existencia
         private void CalcularExistencia(Factura factura)
         {
             foreach (var detalle in factura.FacturaDetalle)
@@ -84,6 +96,7 @@ namespace BL.Rentas
                     if (factura.Activo == true)
                     {
                         producto.Existencia = producto.Existencia - detalle.Cantidad;
+                        
                     }
                     else
                     {
@@ -96,9 +109,7 @@ namespace BL.Rentas
         private Resultado Validar(Factura factura)
         {
             var resultado = new Resultado();
-            resultado.Exitoso = true;
-
-            if (factura == null)
+           if (factura == null)
             {
                 resultado.Mensaje = "Agregue una factura para poderla salvar";
                 resultado.Exitoso = false;
@@ -139,7 +150,11 @@ namespace BL.Rentas
                 }
             }
 
+            
+               
+        
 
+    
             return resultado;
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data.Entity;
+using System.Linq;
 
 namespace BL.Rentas
 {
@@ -22,7 +23,14 @@ namespace BL.Rentas
 
             return ListaCompras;
         }
+        public BindingList<Compra> ObtenerCompras(DateTime fechainicial, DateTime fechafinal)
+        {
+            _contexto.Compra.Include("CompraDetalle").Where(compra => compra.Fecha >= fechainicial
+            && compra.Fecha <= fechafinal && compra.Activo == true).ToList();
 
+            ListaCompras = _contexto.Compra.Local.ToBindingList();
+            return ListaCompras;
+        }
         public void AgregarCompra()
         {
             var nuevaCompra = new Compra();
