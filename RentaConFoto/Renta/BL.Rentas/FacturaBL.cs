@@ -78,7 +78,13 @@ namespace BL.Rentas
                 return resultado;
             }
 
-            CalcularExistencia(factura);
+            if (CalcularExistencia(factura) == false)
+            {
+                resultado.Mensaje = "Unos de los productos en la factura no tiene existencia";
+
+                resultado.Exitoso = false;
+                return resultado;
+            }
 
             _contexto.SaveChanges();
             resultado.Exitoso = true;
@@ -86,17 +92,21 @@ namespace BL.Rentas
         }
 
         //codigo calcula existencia
-        private void CalcularExistencia(Factura factura)
+        private bool CalcularExistencia(Factura factura)
         {
             foreach (var detalle in factura.FacturaDetalle)
             {
-                var producto = _contexto.Productos.Find(detalle.ProductoId);
+                var producto =
+                    _contexto.Productos.Find(detalle.ProductoId);
                 if (producto != null)
                 {
                     if (factura.Activo == true)
                     {
                         producto.Existencia = producto.Existencia - detalle.Cantidad;
-                        
+                        if (producto.Existencia < 0)
+                        {
+                            return false;
+                        }
                     }
                     else
                     {
@@ -104,6 +114,8 @@ namespace BL.Rentas
                     }
                 }
             }
+
+            return true;
         }
 
         private Resultado Validar(Factura factura)
