@@ -18,7 +18,6 @@ namespace BL.Rentas
             _contexto = new Contexto();
             ListaProveedores = new BindingList<Proveedor>();
 
-
         }
 
         public BindingList<Proveedor> ObtenerProveedor()
@@ -28,6 +27,7 @@ namespace BL.Rentas
 
             return ListaProveedores;
         }
+       
 
         public bool GuardarProveedor(Proveedor proveedor)
         {

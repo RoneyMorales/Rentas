@@ -104,7 +104,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FormReporteCompras";
-            this.Text = "FormReporteCompras";
+            this.Text = "Reporte de Compras";
             this.ResumeLayout(false);
             this.PerformLayout();
 
