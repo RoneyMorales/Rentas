@@ -8,3 +8,13 @@ C:\Users\Roney\Desktop\Renta\Renta\BL.Rentas\bin\Debug\EntityFramework.SqlServer
 C:\Users\Roney\Desktop\Renta\Renta\BL.Rentas\obj\Debug\BL.Rentas.csprojResolveAssemblyReference.cache
 C:\Users\Roney\Desktop\Renta\Renta\BL.Rentas\obj\Debug\BL.Rentas.dll
 C:\Users\Roney\Desktop\Renta\Renta\BL.Rentas\obj\Debug\BL.Rentas.pdb
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\BL.Rentas.dll.config
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\BL.Rentas.dll
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\BL.Rentas.pdb
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\EntityFramework.dll
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\EntityFramework.xml
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\obj\Debug\BL.Rentas.csprojResolveAssemblyReference.cache
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\obj\Debug\BL.Rentas.dll
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\BL.Rentas\obj\Debug\BL.Rentas.pdb

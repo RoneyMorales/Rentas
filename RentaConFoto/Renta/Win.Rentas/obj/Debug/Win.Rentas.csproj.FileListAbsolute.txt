@@ -82,3 +82,4 @@ C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.csproj.GenerateResource.Cache
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteProveedores.resources
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteClientes.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteCompras.resources

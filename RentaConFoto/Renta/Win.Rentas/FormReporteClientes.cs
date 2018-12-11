@@ -16,15 +16,31 @@ namespace Win.Rentas
         public FormReporteClientes()
         {
             InitializeComponent();
-            var _clientesBL = new ClientesBL();
-            var bindingSource = new BindingSource();
-            bindingSource.DataSource = _clientesBL.ObtenerClientes();
+             var _clientesBL = new ClientesBL();
+             var bindingSource = new BindingSource();
+             bindingSource.DataSource = _clientesBL.ObtenerClientes();
+
+             var reporte = new ReporteClientes();
+             reporte.SetDataSource(bindingSource);
+
+             crystalReportViewer1.ReportSource = reporte;
+             crystalReportViewer1.RefreshReport();
+
+            /*var _clientesBL = new ClientesBL();
+            var bindingSourceClientes = new BindingSource();
+            bindingSourceClientes.DataSource = _clientesBL.ObtenerClientes();
+            var _ciudadBL = new CiudadBL();
+            var bindingSourceCiudad = new BindingSource();
+            bindingSourceCiudad.DataSource = _ciudadBL.ObtenerCategorias();
 
             var reporte = new ReporteClientes();
-            reporte.SetDataSource(bindingSource);
+            reporte.Database.Tables[0].SetDataSource(bindingSourceClientes.DataSource);
+            reporte.Database.Tables[1].SetDataSource(bindingSourceCiudad.DataSource);
 
             crystalReportViewer1.ReportSource = reporte;
-            crystalReportViewer1.RefreshReport();
+            crystalReportViewer1.RefreshReport();*/
+
+
         }
     }
 }

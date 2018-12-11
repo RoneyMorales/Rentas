@@ -4,6 +4,10 @@
 
     partial class DataSet
     {
+        partial class CompraDataTable
+        {
+        }
+
         partial class CiudadDataTable
         {
         }

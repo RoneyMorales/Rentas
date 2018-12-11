@@ -109,5 +109,12 @@ namespace Win.Rentas
             FormReporteClientes.MdiParent = this;
             FormReporteClientes.Show();
         }
+
+        private void reporteDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormReporteCompras = new FormReporteCompras();
+            FormReporteCompras.MdiParent = this;
+            FormReporteCompras.Show();
+        }
     }
 }
