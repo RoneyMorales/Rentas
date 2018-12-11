@@ -124,6 +124,12 @@
     <Compile Include="FormReporteCompras.Designer.cs">
       <DependentUpon>FormReporteCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteFacturas.Designer.cs">
+      <DependentUpon>FormReporteFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReporteProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteCompras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteFactura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFactura.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ReporteProductos.cs">
@@ -189,6 +201,9 @@
     <EmbeddedResource Include="FormReporteCompras.resx">
       <DependentUpon>FormReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteFacturas.resx">
+      <DependentUpon>FormReporteFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReporteProductos.resx">
       <DependentUpon>FormReporteProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,10 @@
     <EmbeddedResource Include="ReporteCompras.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteCompras.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFactura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFactura.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteProductos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
