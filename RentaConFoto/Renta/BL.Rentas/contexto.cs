@@ -6,8 +6,10 @@ namespace BL.Rentas
     public class Contexto : DbContext
     {
         public Contexto() : base("Server=DESKTOP-3NEEON0;Database=VideoJuegos2;Trusted_Connection=True; ")
-            //DESKTOP-3NEEON0
-            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
+            
+            //Server=NombredemiServidor;Database=VideoJeugos;User Id=RRLLSQLEXP;Password=--**--;
+           // no recuerdo cual fue el password que utilice para ese usuario del cual disponia en sql. 
+           //CON ESE USUARIO Y CONTRASEÑA ME PODRIA CONECTAR DE MANERA REMOTA A MI BASE DE DATOS.
         {
 
         }

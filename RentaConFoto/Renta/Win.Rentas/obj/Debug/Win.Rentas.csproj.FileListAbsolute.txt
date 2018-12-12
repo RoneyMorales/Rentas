@@ -84,3 +84,7 @@ C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteClientes.resources
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteCompras.resources
 C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.FormReporteFacturas.resources
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\bin\Debug\Win.Rentas.exe.manifest
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\bin\Debug\Win.Rentas.application
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.exe.manifest
+C:\Users\Roney\Desktop\Repositorios GITHUB\Rentas\RentaConFoto\Renta\Win.Rentas\obj\Debug\Win.Rentas.application
