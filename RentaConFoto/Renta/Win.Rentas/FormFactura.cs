@@ -149,7 +149,7 @@ namespace Win.Rentas
                 label1.Visible = false;
             }
         }
-        // Actualizar Lista de Proveedores y lista de Productos en FORMULARIO COMPRAS
+        // Actualizar Lista de Clientes y lista de Productos en FORMULARIO Factura
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -160,12 +160,7 @@ namespace Win.Rentas
                 _facturaBL.RefrescarDatos(FacturaId);
 
 
-                // _comprasBL = new ComprasBL();
-                // listaComprasBindingSource.DataSource = _comprasBL.ObtenerCompras();
-
-                //_proveedorBL = new ProveedoresBL();
-                //listaProveedoresBindingSource.DataSource = _proveedorBL.ObtenerProveedor();
-                //listaProveedoresBindingSource.ResetBindings(false);
+               
                 _clientesBL = new ClientesBL();
                 listaClientesBindingSource.DataSource = _productosBL.ObtenerProductos();
                 listaClientesBindingSource.ResetBindings(false);

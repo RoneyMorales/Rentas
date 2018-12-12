@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BL.Rentas
 {
-   public class Contexto : DbContext
+    public class Contexto : DbContext
     {
-        public Contexto() : base("VideoJuegos")
-
+        public Contexto() : base("Server=DESKTOP-3NEEON0;Database=VideoJuegos2;Trusted_Connection=True; ")
+            //DESKTOP-3NEEON0
+            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
         {
 
         }
